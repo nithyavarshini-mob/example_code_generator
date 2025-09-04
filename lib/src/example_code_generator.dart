@@ -136,7 +136,7 @@ class ${className}MockApi {
         '${api['url']}',
         data: ${className}MockApiRequest.request,
         headers: ${className}MockApiHeaders.headers,
-        (server) => server.reply(
+        (MockServer server) => server.reply(
           200,
           ${className}MockApiResponse.success,
           statusMessage: 'OK',
