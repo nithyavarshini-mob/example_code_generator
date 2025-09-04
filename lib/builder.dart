@@ -5,7 +5,7 @@ import 'package:source_gen/source_gen.dart';
 Builder myBuilder(BuilderOptions options) {
   return PartBuilder(
     <Generator>[
-      MyGenerator(),
+      // MyGenerator(),
       // MockApiGenerator(),
       SoloMockApiGenerator()
     ],
