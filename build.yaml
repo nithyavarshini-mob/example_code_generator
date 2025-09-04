@@ -6,13 +6,10 @@ targets:
           - lib/**.dart
           - example/lib/**.dart
 
-
-
 builders:
   example_code_generator:
     import: "package:example_code_generator/builder.dart"
     builder_factories: ["myBuilder"]
-    build_extensions: {".dart": [".my_gen.dart"]}
+    build_extensions: {".dart": [".g.dart"]}
     auto_apply: dependents
     build_to: source
-
