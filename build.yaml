@@ -9,7 +9,7 @@ targets:
 
 
 builders:
-  myBuilder:
+  example_code_generator:
     import: "package:example_code_generator/builder.dart"
     builder_factories: ["myBuilder"]
     build_extensions: {".dart": [".g.dart"]}
