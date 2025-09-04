@@ -1,0 +1,18 @@
+targets:
+  $default:
+    builders:
+      example_code_generator|myBuilder:
+        generate_for:
+          - lib/**.dart
+          - example/lib/**.dart
+
+
+
+builders:
+  myBuilder:
+    import: "package:example_code_generator/builder.dart"
+    builder_factories: ["myBuilder"]
+    build_extensions: {".dart": [".g.dart"]}
+    auto_apply: dependents
+    build_to: source
+
