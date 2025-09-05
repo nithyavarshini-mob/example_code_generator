@@ -121,6 +121,8 @@ class ${className}MockApiResponse {
   File('${folder.path}/${name}_mock_api.dart').writeAsStringSync('''
 import 'package:dio/dio.dart';
 import 'package:http_mock_adapter/http_mock_adapter.dart';
+import 'package:http_mock_adapter/src/handlers/request_handler.dart';
+
 
 import '${name}_mock_api_request.dart';
 import '${name}_mock_api_headers.dart';
